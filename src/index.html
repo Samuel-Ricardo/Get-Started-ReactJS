@@ -16,16 +16,19 @@
 
         <script>
 
+            var React = require('react')
+            var ReactDOM = require('react-dom')
+
             function MyComponent() {
 
-                React.crateElement('div',{classname: 'app'}, 'Hello World !!!')
+                React.crateElement('div',null, 'Hello World !!!')
 
             }
 
             ReactDOM.render(
 
               //React.crateElement(element//function name, {properties}, children)
-                React.crateElement(MyComponent)
+                React.crateElement(MyComponent),
 
                 document.getElementById("app")
             )
